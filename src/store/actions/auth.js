@@ -140,7 +140,6 @@ export const autoAnonSignIn = () => {
         dispatch(authGetToken())
             .then(token => startMain())
             .catch(err => {
-                dispatch(anonLogin());
                 console.log("Failed to fetch token!")
             }
             );

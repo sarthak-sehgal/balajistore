@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 
 import uiReducer from './reducers/ui';
 import authReducer from './reducers/auth';
+import productsReducer from './reducers/products';
 
 export default configureStore = () => {
     let composeEnhancers = compose;
@@ -13,7 +14,8 @@ export default configureStore = () => {
 
     const rootReducer = combineReducers({
         ui: uiReducer,
-        auth: authReducer
+        auth: authReducer,
+        products: productsReducer
     });
 
     return createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));

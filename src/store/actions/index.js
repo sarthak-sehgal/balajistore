@@ -4,5 +4,11 @@ export {
 } from './ui';
 
 export {
-    autoAnonSignIn
+    autoAnonSignIn,
+    authGetToken
 } from './auth';
+
+export {
+    getProducts,
+    searchProducts
+} from './products';
