@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
+import {connect} from 'react-redux';
 
 class AllProducts extends Component {
+    componentDidMount() {
+        console.log(this.props.uid);
+    }
+
     constructor(props) {
         super(props);
         this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
@@ -27,4 +32,10 @@ class AllProducts extends Component {
     }
 }
 
-export default AllProducts;
+const mapStateToProps = state => {
+    return {
+        uid: state.auth.uid,
+    }
+}
+
+export default connect(mapStateToProps)(AllProducts);
