@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, ActivityIndicator, ScrollView, TouchableOpacity, Button, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
 import { getCart, removeProduct } from '../../store/actions/index';
+import QtyCounter from '../../components/qtyCounter/qtyCounter';
 
 class Cart extends Component {
     state = {
@@ -74,8 +75,8 @@ class Cart extends Component {
 
     removeProductFromCart(key, uid) {
         this.props.removeProduct(key, this.props.uid)
-        .catch(err => console.log(err))
-        .then(result => console.log(result));
+            .catch(err => console.log(err))
+            .then(result => console.log(result));
     }
 
     render() {
@@ -91,10 +92,13 @@ class Cart extends Component {
                         <Text style={styles.productName}>{item.productName}</Text>
                         <Text style={styles.productPrice}>Price: {item.productPrice}</Text>
                         <Text style={styles.productDescription}>{item.productDescription}</Text>
-                        <Button
-                            onPress={() => this.removeProductFromCart(key, this.props.uid)}
-                            title="Remove"
-                        />
+                        <View style={styles.productFooter}>
+                            <QtyCounter />
+                            <Button
+                                onPress={() => this.removeProductFromCart(key, this.props.uid)}
+                                title="Remove"
+                            />
+                        </View>
                     </View>
                 )
             });
@@ -195,6 +199,12 @@ const styles = StyleSheet.create({
         fontSize: 17,
         color: '#0090FF',
         marginBottom: 5
+    },
+    productFooter: {
+        marginTop: 10,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     }
 });
 
