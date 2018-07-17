@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
 mapStateToProps = state => {
     return {
         products: state.products.searchResults,
-        isLoading: state.ui.isLoading
+        isLoading: state.ui.productsLoading
     }
 }
 

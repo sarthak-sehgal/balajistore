@@ -1,6 +1,10 @@
 export {
     uiStartLoading,
-    uiStopLoading
+    uiStopLoading,
+    cartStartLoading,
+    cartStopLoading,
+    productsStartLoading,
+    productsStopLoading
 } from './ui';
 
 export {

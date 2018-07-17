@@ -16,7 +16,7 @@ class Cart extends Component {
                 this.setState({ cart: nextProps.cart, isEmpty: false });
                 if (nextProps.cart.products) {
                     let count = Object.keys(nextProps.cart.products).length;
-                    this.setState({itemsCount: count});
+                    this.setState({ itemsCount: count });
                     if (count === 0) {
                         this.setState({ isEmpty: true, totalPrice: 0 });
                         console.log("Cart empty!");
@@ -25,7 +25,7 @@ class Cart extends Component {
                         Object.keys(nextProps.cart.products).map(key => {
                             price += parseInt(nextProps.cart.products[key].productPrice);
                         });
-                        this.setState({totalPrice: price});
+                        this.setState({ totalPrice: price });
                     }
                 } else {
                     this.setState({ isEmpty: true });
@@ -79,14 +79,22 @@ class Cart extends Component {
         } else {
             // FIX THIS
             cart = Object.keys(this.state.cart.products).map(key => {
-                return <Text key={key}>{this.state.cart.products[key].productName}</Text>;
+                const item = { ...this.state.cart.products[key] };
+                return (
+                    <View key={key} style={styles.product}>
+                        <Text style={styles.productName}>{item.productName}</Text>
+                        <Text style={styles.productPrice}>Price: {item.productPrice}</Text>
+                        <Text style={styles.productDescription}>{item.productDescription}</Text>
+                    </View>
+                )
             });
         }
-        return (
+
+        let cartContainer = (
             <View style={styles.container}>
                 <View style={styles.cartHeader}>
-                    <Text style={styles.cartSubtotal}>Cart Subtotal ({this.state.itemsCount} Item): <Text style={styles.cartPrice}>Rs. {this.state.totalPrice}</Text></Text>
-                    <TouchableOpacity>
+                    <Text style={styles.cartSubtotal}>Cart Subtotal ({this.state.itemsCount} {this.state.itemsCount > 0 ? "items" : "item"}): <Text style={styles.cartPrice}>Rs. {this.state.totalPrice}</Text></Text>
+                    <TouchableOpacity disabled={this.state.itemsCount === 0}>
                         <View style={styles.checkoutButton}>
                             <Text style={styles.checkoutButtonText}>PROCEED TO CHECKOUT</Text>
                         </View>
@@ -95,6 +103,15 @@ class Cart extends Component {
                 <ScrollView style={styles.cartContainer}>
                     {cart}
                 </ScrollView>
+            </View>
+        );
+        if (this.props.isLoading) {
+            cartContainer = <ActivityIndicator />
+        }
+
+        return (
+            <View style={styles.container}>
+                {cartContainer}
             </View>
         )
     }
@@ -111,7 +128,8 @@ const styles = StyleSheet.create({
     },
     cartContainer: {
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        width: '95%'
     },
     cartHeader: {
         display: 'flex',
@@ -143,13 +161,38 @@ const styles = StyleSheet.create({
         paddingBottom: 10,
         fontWeight: 'bold',
         color: '#fff'
+    },
+    product: {
+        backgroundColor: '#eee',
+        borderRadius: 5,
+        width: '100%',
+        marginBottom: 10,
+        padding: 10
+    },
+    productList: {
+        width: '100%'
+    },
+    productName: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#000'
+    },
+    productDescription: {
+        fontSize: 15,
+        color: 'rgba(0,0,0,0.7)'
+    },
+    productPrice: {
+        fontSize: 17,
+        color: '#0090FF',
+        marginBottom: 5
     }
 });
 
 mapStateToProps = state => {
     return {
         uid: state.auth.uid,
-        cart: state.cart.cart
+        cart: state.cart.cart,
+        isLoading: state.ui.cartLoading
     }
 }
 

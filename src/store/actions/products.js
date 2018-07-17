@@ -1,16 +1,17 @@
 import * as actionTypes from './actionTypes';
-import { uiStartLoading, uiStopLoading, authGetToken } from './index';
+import { productsStartLoading, productsStopLoading, authGetToken } from './index';
 
 export const getProducts = () => {
     return dispatch => {
-        dispatch(uiStartLoading());
+        dispatch(productsStartLoading());
         dispatch(authGetToken())
             .then(token => {
                 fetch("https://native-shopping-app.firebaseio.com/products.json?auth=" + token)
                     .catch(err => {
                         console.log(err);
-                        dispatch(uiStopLoading());
+                        dispatch(productsStopLoading());
                         alert("Oops! Something went wrong. Failed to load products.");
+                        return;
                     })
                     .then(res => res.json())
                     .then(parsedRes => {
@@ -22,7 +23,7 @@ export const getProducts = () => {
                             });
                         };
                         dispatch(setProducts(products));
-                        dispatch(uiStopLoading());
+                        dispatch(productsStopLoading());
                     })
             })
     }

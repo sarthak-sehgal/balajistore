@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, Platform, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, Platform, ActivityIndicator, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { connect } from 'react-redux';
 import { addProduct } from '../../store/actions/index';
@@ -59,21 +59,27 @@ class Product extends Component {
         //         </Picker>
         //     );
         // }
+        let addToCartBtn = (
+            <TouchableOpacity onPress={() => this.addToCart(this.state.selectedProduct)}>
+                <View style={styles.cartButton}>
+                    <Icon
+                        size={25}
+                        name={Platform.OS === 'ios' ? 'ios-cart' : 'md-cart'}
+                        style={styles.cartButtonIcon}
+                    />
+                    <Text style={styles.cartButtonText}>ADD TO CART</Text>
+                </View>
+            </TouchableOpacity>
+        );
+        if(this.props.isLoading) {
+            addToCartBtn = <ActivityIndicator />;
+        }
         return (
             <View style={styles.container}>
                 <Text style={styles.productName}>{this.state.selectedProduct.name}</Text>
                 <Text style={styles.productDescription}>{this.state.selectedProduct.description}</Text>
                 <Text style={styles.productPrice}>Rs. {this.state.selectedProduct.price}</Text>
-                <TouchableOpacity onPress={() => this.addToCart(this.state.selectedProduct)}>
-                    <View style={styles.cartButton}>
-                        <Icon
-                            size={25}
-                            name={Platform.OS === 'ios' ? 'ios-cart' : 'md-cart'}
-                            style={styles.cartButtonIcon}
-                        />
-                        <Text style={styles.cartButtonText}>ADD TO CART</Text>
-                    </View>
-                </TouchableOpacity>
+                {addToCartBtn}
             </View>
         );
     }

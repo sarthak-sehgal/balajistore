@@ -1,11 +1,11 @@
 import * as actionTypes from './actionTypes';
-import { uiStartLoading, uiStopLoading, authGetToken } from './index';
+import { cartStartLoading, cartStopLoading, authGetToken } from './index';
 import { BASE_URL } from '../../../firebaseConfig';
 
 export const addProduct = (cartDetails) => {
     return (dispatch, getState) => {
         return new Promise((resolve, reject) => {
-            dispatch(uiStartLoading());
+            dispatch(cartStartLoading());
             dispatch(authGetToken())
                 .then(token => {
                     dispatch(getCartsFromDb())
@@ -43,7 +43,7 @@ export const addProduct = (cartDetails) => {
                                     })
                                         .catch(error => {
                                             console.log(err);
-                                            dispatch(uiStopLoading());
+                                            dispatch(cartStopLoading());
                                             alert("Failed to add product! Please try again.");
                                             reject();
                                         })
@@ -51,12 +51,12 @@ export const addProduct = (cartDetails) => {
                                         .then(parsedRes => {
                                             if (parsedRes.error) {
                                                 console.log(parsedRes);
-                                                dispatch(uiStopLoading());
+                                                dispatch(cartStopLoading());
                                                 alert("Failed to add product! Please try again.");
                                                 reject();
                                             } else {
                                                 dispatch(addCartProductInStore(cartDetails));
-                                                dispatch(uiStopLoading());
+                                                dispatch(cartStopLoading());
                                                 dispatch(getCart(getState().auth.uid))
                                                     .then(result => console.log(result))
                                                     .catch(err => alert("Failed to update user cart!"));
@@ -88,7 +88,7 @@ export const addProduct = (cartDetails) => {
                                 })
                                     .catch(error => {
                                         console.log(err);
-                                        dispatch(uiStopLoading());
+                                        dispatch(cartStopLoading());
                                         alert("Failed to add product! Please try again.");
                                         reject();
                                     })
@@ -96,12 +96,12 @@ export const addProduct = (cartDetails) => {
                                     .then(parsedRes => {
                                         if (parsedRes.error) {
                                             console.log(parsedRes);
-                                            dispatch(uiStopLoading());
+                                            dispatch(cartStopLoading());
                                             alert("Failed to add product! Please try again.");
                                             reject();
                                         } else {
                                             dispatch(addCartProductInStore(cartDetails));
-                                            dispatch(uiStopLoading());
+                                            dispatch(cartStopLoading());
                                             dispatch(getCart())
                                                 .then(result => console.log(result))
                                                 .catch(err => alert("Failed to update user cart!"));
@@ -111,15 +111,16 @@ export const addProduct = (cartDetails) => {
                             }
                         })
                         .catch(err => {
+                            dispatch(cartStopLoading());
                             alert("Oops! Something went wrong.");
                             reject();
                         });
-    
-    
+
+
                 })
                 .catch(err => {
                     console.log(err);
-                    dispatch(uiStopLoading());
+                    dispatch(cartStopLoading());
                     alert("Failed to add product! Please try again.");
                     reject();
                 });
@@ -137,13 +138,11 @@ export const addCartProductInStore = (cartDetails) => {
 export const getCartsFromDb = () => {
     return dispatch => {
         return new Promise((resolve, reject) => {
-            dispatch(uiStartLoading());
             dispatch(authGetToken())
                 .then(token => {
                     fetch(BASE_URL + "/cart.json?auth=" + token)
                         .catch(err => {
                             console.log(err);
-                            dispatch(uiStopLoading());
                             alert("Oops! Something went wrong. Failed to load cart.");
                             reject();
                         })
@@ -157,7 +156,6 @@ export const getCartsFromDb = () => {
                                 });
                             };
                             dispatch(setCarts(carts));
-                            dispatch(uiStopLoading());
                             resolve();
                         })
                 })
@@ -178,8 +176,12 @@ export const setCarts = (carts) => {
 export const getCart = (uid) => {
     return (dispatch, getState) => {
         return new Promise((resolve, reject) => {
+            dispatch(cartStartLoading());
             dispatch(getCartsFromDb())
-                .catch(err => alert("Error loading cart!"))
+                .catch(err => {
+                    dispatch(cartStopLoading());
+                    alert("Error loading cart!")
+                })
                 .then(success => {
                     let cart = getState().cart.carts;
                     cart = cart.filter(el => {
@@ -187,8 +189,10 @@ export const getCart = (uid) => {
                     });
                     if (cart.length > 0) {
                         dispatch(setCart(cart[0]));
+                        dispatch(cartStopLoading());
                         resolve();
                     } else {
+                        dispatch(cartStopLoading());
                         reject();
                     }
                 });
