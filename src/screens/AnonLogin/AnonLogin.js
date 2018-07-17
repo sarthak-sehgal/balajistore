@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import { View, ActivityIndicator, Image, StyleSheet } from 'react-native';
-import {connect} from 'react-redux';
-import {autoAnonSignIn} from '../../store/actions/index';
+import { View, NetInfo, Image, StyleSheet } from 'react-native';
+import { connect } from 'react-redux';
+import { autoAnonSignIn } from '../../store/actions/index';
 
 class AnonLogin extends Component {
     componentDidMount() {
-        this.props.onAutoSignIn();
+        NetInfo.getConnectionInfo().then((connectionInfo) => {
+            if(connectionInfo.type === "none") {
+                alert("Please connect to internet");
+            } else {
+                this.props.onAutoSignIn();
+            }
+        });
     }
     render() {
         return (
