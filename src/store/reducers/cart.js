@@ -7,14 +7,21 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case actionTypes.REMOVE_PRODUCT_IN_STORE: {
-            let updatedProducts = [...state.searchResults];
-            updatedProducts = updatedProducts.filter(product => {
-                return product.key !== action.key;
+        case actionTypes.REMOVE_CART_PRODUCT_IN_STORE: {
+            let cart = { ...state.cart };
+            let newProducts = {};
+            Object.keys(cart.products).map(key => {
+                if (key !== action.id)
+                    newProducts[key] = { ...cart.products[key] };
             });
+            cart.products = {};
+            const updatedCart = {
+                ...cart,
+                products: newProducts
+            }
             return {
                 ...state,
-                searchResults: updatedProducts
+                cart: updatedCart
             }
         }
         case actionTypes.ADD_CART_PRODUCT_IN_STORE: {
@@ -39,7 +46,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.SET_CART:
             return {
                 ...state,
-                cart: {...action.cart}
+                cart: { ...action.cart }
             }
     }
     return state;

@@ -206,3 +206,72 @@ export const setCart = (cart) => {
         cart: cart
     }
 }
+
+export const removeProduct = (productId, uid) => {
+    return (dispatch, getState) => {
+        return new Promise((resolve, reject) => {
+            dispatch(cartStartLoading());
+            dispatch(authGetToken())
+                .then(token => {
+                    dispatch(getCartsFromDb())
+                        .then(success => {
+                            let cart = (getState().cart.carts);
+                            cart = cart.filter(el => {
+                                return el.uid === uid;
+                            });
+                            let newProducts = {};
+                            Object.keys(cart[0].products).map(key => {
+                                if(key !== productId)
+                                    newProducts[key] = {...cart[0].products[key]};
+                            });
+                            fetch(BASE_URL + "/cart/" + cart[0].key + ".json?auth=" + token, {
+                                method: "PATCH",
+                                body: JSON.stringify({
+                                    products: newProducts
+                                }),
+                                headers: {
+                                    'Content-Type': 'application/json'
+                                }
+                            })
+                                .catch(error => {
+                                    console.log(err);
+                                    dispatch(cartStopLoading());
+                                    alert("Failed to remove product! Please try again.");
+                                    reject();
+                                })
+                                .then(res => res.json())
+                                .then(parsedRes => {
+                                    if (parsedRes.error) {
+                                        console.log(parsedRes);
+                                        dispatch(cartStopLoading());
+                                        alert("Failed to remove product! Please try again.");
+                                        reject();
+                                    } else {
+                                        dispatch(removeCartProductInStore(productId));
+                                        dispatch(cartStopLoading());
+                                        resolve();
+                                    }
+                                });
+                        })
+                        .catch(err => {
+                            dispatch(cartStopLoading());
+                            alert("Oops! Something went wrong.");
+                            reject();
+                        });
+                })
+                .catch(err => {
+                    console.log(err);
+                    dispatch(cartStopLoading());
+                    alert("Failed to add product! Please try again.");
+                    reject();
+                });
+        })
+    }
+};
+
+export const removeCartProductInStore = (productId) => {
+    return {
+        type: actionTypes.REMOVE_CART_PRODUCT_IN_STORE,
+        id: productId
+    }
+};

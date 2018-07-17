@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { View, Text, ActivityIndicator, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, ActivityIndicator, ScrollView, TouchableOpacity, Button, StyleSheet } from 'react-native';
 import { connect } from 'react-redux';
-import { getCart } from '../../store/actions/index';
+import { getCart, removeProduct } from '../../store/actions/index';
 
 class Cart extends Component {
     state = {
@@ -72,6 +72,12 @@ class Cart extends Component {
             .catch(err => alert("Error occurred while loading cart!"));
     }
 
+    removeProductFromCart(key, uid) {
+        this.props.removeProduct(key, this.props.uid)
+        .catch(err => console.log(err))
+        .then(result => console.log(result));
+    }
+
     render() {
         let cart = <ActivityIndicator />;
         if (this.state.isEmpty) {
@@ -85,6 +91,10 @@ class Cart extends Component {
                         <Text style={styles.productName}>{item.productName}</Text>
                         <Text style={styles.productPrice}>Price: {item.productPrice}</Text>
                         <Text style={styles.productDescription}>{item.productDescription}</Text>
+                        <Button
+                            onPress={() => this.removeProductFromCart(key, this.props.uid)}
+                            title="Remove"
+                        />
                     </View>
                 )
             });
@@ -198,7 +208,8 @@ mapStateToProps = state => {
 
 mapDispatchToProps = dispatch => {
     return {
-        getCart: (uid) => dispatch(getCart(uid))
+        getCart: (uid) => dispatch(getCart(uid)),
+        removeProduct: (key, uid) => dispatch(removeProduct(key, uid))
     }
 }
 
