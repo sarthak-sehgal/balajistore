@@ -82,7 +82,7 @@ class AllProducts extends Component {
         if (this.props.isLoading) {
             productsList = (
                 <View style={styles.container}>
-                    <ActivityIndicator />
+                    <ActivityIndicator style={styles.activityIndicator} />
                 </View>
             );
         }
@@ -96,19 +96,24 @@ class AllProducts extends Component {
 };
 
 const styles = StyleSheet.create({
+    activityIndicator: {
+        marginTop: 15
+    },
     container: {
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         alignItems: 'center',
         height: '100%',
-        width: '100%'
+        width: '100%',
+        flex: 1
     },
     searchBar: {
         width: '95%',
         backgroundColor: '#eeecec',
         borderRadius: 3,
         padding: 5,
+        marginTop: 15,
         marginBottom: 10,
         height: 45,
         color: '#000'
