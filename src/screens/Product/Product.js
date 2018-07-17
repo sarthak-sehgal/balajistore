@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, Platform, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { addProduct } from '../../store/actions/index';
 
 class Product extends Component {
     state = {
         selectedProduct: {},
-        qty: [],
-        selectedQty: ''
+        // qty: [],
+        // selectedQty: ''
     }
 
     componentDidMount() {
         let selectedProduct = this.props.products.find(product => product.key === this.props.itemKey);
-        this.setState({ selectedProduct: selectedProduct, qty: selectedProduct.qty, selectedQty: selectedProduct.qty[0] });
+        this.setState({ selectedProduct: selectedProduct });
     }
 
     constructor(props) {
@@ -25,12 +25,26 @@ class Product extends Component {
             ...details,
             uid: this.props.uid
         };
-        this.props.addProduct(cartDetails);
+        this.props.addProduct(cartDetails)
+            .then(result => {
+                /* // Pop product screen
+                this.props.navigator.pop({
+                     animated: true,
+                     animationType: 'fade',
+                }); 
+                */
+                if (result === "added") {
+                    alert("Product added!");
+                } else if (result === "exists") {
+                    alert("Product exists in cart!");
+                }
+            })
+            .catch(err => console.log(err));
     }
 
     render() {
         // let picker = null;
-        let qty = [...this.state.qty];
+        // let qty = [...this.state.qty];
         // let pickerItems = qty.map(function (qty, key) {
         //     return <Picker.Item label={qty} value={qty.toLowerCase()} key={key} />
         // });

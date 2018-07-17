@@ -4,41 +4,83 @@ import { BASE_URL } from '../../../firebaseConfig';
 
 export const addProduct = (cartDetails) => {
     return (dispatch, getState) => {
-        dispatch(uiStartLoading());
-        dispatch(authGetToken())
-            .then(token => {
-                dispatch(getCarts())
-                    .then(success => {
-                        let cart = (getState().cart.carts);
-                        cart = cart.filter(el => {
-                            return el.uid === cartDetails.uid;
-                        });
-                        if (cart[0]) {
-                            let exists = false;
-                            if (cart[0].products) {
-                                cart[0].products.map(el => {
-                                    if (el.productKey === cartDetails.key) {
-                                        exists = true;
+        return new Promise((resolve, reject) => {
+            dispatch(uiStartLoading());
+            dispatch(authGetToken())
+                .then(token => {
+                    dispatch(getCartsFromDb())
+                        .then(success => {
+                            let cart = (getState().cart.carts);
+                            cart = cart.filter(el => {
+                                return el.uid === cartDetails.uid;
+                            });
+                            if (cart[0]) {
+                                let exists = false;
+                                if (cart[0].products) {
+                                    for (let key in cart[0].products) {
+                                        if (key === cartDetails.key) {
+                                            exists = true;
+                                        }
                                     }
-                                });
-                            };
-                            if (!exists) {
-                                let newProduct = {};
-                                let productCount = 0;
-                                if(cart[0].products) {
-                                    productCount = cart[0].products.length;
+                                };
+                                console.log("works");
+                                if (!exists) {
+                                    let newProduct = {};
+                                    newProduct[cartDetails.key] = {
+                                        productDescription: cartDetails.description,
+                                        productKey: cartDetails.key,
+                                        productName: cartDetails.name,
+                                        productPrice: cartDetails.price
+                                    }
+                                    fetch(BASE_URL + "/cart/" + cart[0].key + "/products.json?auth=" + token, {
+                                        method: "PATCH",
+                                        body: JSON.stringify({
+                                            ...newProduct
+                                        }),
+                                        headers: {
+                                            'Content-Type': 'application/json'
+                                        }
+                                    })
+                                        .catch(error => {
+                                            console.log(err);
+                                            dispatch(uiStopLoading());
+                                            alert("Failed to add product! Please try again.");
+                                            reject();
+                                        })
+                                        .then(res => res.json())
+                                        .then(parsedRes => {
+                                            if (parsedRes.error) {
+                                                console.log(parsedRes);
+                                                dispatch(uiStopLoading());
+                                                alert("Failed to add product! Please try again.");
+                                                reject();
+                                            } else {
+                                                dispatch(addCartProductInStore(cartDetails));
+                                                dispatch(uiStopLoading());
+                                                dispatch(getCart(getState().auth.uid))
+                                                    .then(result => console.log(result))
+                                                    .catch(err => alert("Failed to update user cart!"));
+                                                resolve("added");
+                                            }
+                                        });
+                                } else {
+                                    resolve("exists");
                                 }
-                                newProduct[productCount] = {
+                            } else {
+                                let newProduct = {};
+                                newProduct[cartDetails.key] = {
                                     productDescription: cartDetails.description,
                                     productKey: cartDetails.key,
                                     productName: cartDetails.name,
                                     productPrice: cartDetails.price
                                 }
-
-                                fetch(BASE_URL + "/cart/" + cart[0].key + "/products.json?auth=" + token, {
-                                    method: "PATCH",
+                                fetch(BASE_URL + "/cart.json?auth=" + token, {
+                                    method: "POST",
                                     body: JSON.stringify({
-                                        ...newProduct
+                                        uid: cartDetails.uid,
+                                        products: {
+                                            ...newProduct
+                                        }
                                     }),
                                     headers: {
                                         'Content-Type': 'application/json'
@@ -48,6 +90,7 @@ export const addProduct = (cartDetails) => {
                                         console.log(err);
                                         dispatch(uiStopLoading());
                                         alert("Failed to add product! Please try again.");
+                                        reject();
                                     })
                                     .then(res => res.json())
                                     .then(parsedRes => {
@@ -55,63 +98,32 @@ export const addProduct = (cartDetails) => {
                                             console.log(parsedRes);
                                             dispatch(uiStopLoading());
                                             alert("Failed to add product! Please try again.");
+                                            reject();
                                         } else {
                                             dispatch(addCartProductInStore(cartDetails));
                                             dispatch(uiStopLoading());
-                                            alert("Product added!");
+                                            dispatch(getCart())
+                                                .then(result => console.log(result))
+                                                .catch(err => alert("Failed to update user cart!"));
+                                            resolve("added");
                                         }
                                     });
-                            } else {
-                                alert("Product exists in cart!");
                             }
-                        } else {
-                            fetch(BASE_URL + "/cart.json?auth=" + token, {
-                                method: "POST",
-                                body: JSON.stringify({
-                                    uid: cartDetails.uid,
-                                    products: {
-                                        0: {
-                                            productDescription: cartDetails.description,
-                                            productName: cartDetails.name,
-                                            productPrice: cartDetails.price,
-                                            productKey: cartDetails.key
-                                        }
-                                    }
-                                }),
-                                headers: {
-                                    'Content-Type': 'application/json'
-                                }
-                            })
-                                .catch(error => {
-                                    console.log(err);
-                                    dispatch(uiStopLoading());
-                                    alert("Failed to add product! Please try again.");
-                                })
-                                .then(res => res.json())
-                                .then(parsedRes => {
-                                    if (parsedRes.error) {
-                                        console.log(parsedRes);
-                                        dispatch(uiStopLoading());
-                                        alert("Failed to add product! Please try again.");
-                                    } else {
-                                        dispatch(addProductInStore(cartDetails));
-                                        dispatch(uiStopLoading());
-                                        alert("Product added!");
-                                    }
-                                });
-                        }
-                    })
-                    .catch(err => {
-                        alert("Oops! Something went wrong.");
-                    });
-
-
-            })
-            .catch(err => {
-                console.log(err);
-                dispatch(uiStopLoading());
-                alert("Failed to add product! Please try again.");
-            })
+                        })
+                        .catch(err => {
+                            alert("Oops! Something went wrong.");
+                            reject();
+                        });
+    
+    
+                })
+                .catch(err => {
+                    console.log(err);
+                    dispatch(uiStopLoading());
+                    alert("Failed to add product! Please try again.");
+                    reject();
+                });
+        })
     }
 };
 
@@ -122,7 +134,7 @@ export const addCartProductInStore = (cartDetails) => {
     }
 };
 
-export const getCarts = () => {
+export const getCartsFromDb = () => {
     return dispatch => {
         return new Promise((resolve, reject) => {
             dispatch(uiStartLoading());
@@ -162,3 +174,31 @@ export const setCarts = (carts) => {
         carts: carts
     }
 };
+
+export const getCart = (uid) => {
+    return (dispatch, getState) => {
+        return new Promise((resolve, reject) => {
+            dispatch(getCartsFromDb())
+                .catch(err => alert("Error loading cart!"))
+                .then(success => {
+                    let cart = getState().cart.carts;
+                    cart = cart.filter(el => {
+                        return el.uid === uid;
+                    });
+                    if (cart.length > 0) {
+                        dispatch(setCart(cart[0]));
+                        resolve();
+                    } else {
+                        reject();
+                    }
+                });
+        });
+    }
+}
+
+export const setCart = (cart) => {
+    return {
+        type: actionTypes.SET_CART,
+        cart: cart
+    }
+}

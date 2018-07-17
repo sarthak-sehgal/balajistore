@@ -16,4 +16,5 @@ export const ADD_PRODUCT_IN_STORE = "ADD_PRODUCT_IN_STORE";
 
 // Cart
 export const SET_CARTS = "SET_CARTS";
+export const SET_CART = "SET_CART";
 export const ADD_CART_PRODUCT_IN_STORE = "ADD_CART_PRODUCT_IN_STORE";

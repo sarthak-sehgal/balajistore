@@ -14,5 +14,6 @@ export {
 } from './products';
 
 export {
-    addProduct
+    addProduct,
+    getCart
 } from './cart';

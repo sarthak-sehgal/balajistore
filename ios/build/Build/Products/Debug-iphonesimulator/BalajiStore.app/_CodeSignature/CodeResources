@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		2m1ffy5DFRNQgKREHi/WRHGp9S0=
+		EbQOKW1/dO3vs0X6Q6Jjnl0CDeE=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -67,11 +67,11 @@
 		</data>
 		<key>PlugIns/BalajiStoreTests.xctest.dSYM/Contents/Resources/DWARF/BalajiStoreTests</key>
 		<data>
-		6l6C+6Ql6soRxNyfMSYFg8kVFPQ=
+		nZAYi2I2bjKokbA1yKv7z+oGK40=
 		</data>
 		<key>PlugIns/BalajiStoreTests.xctest/BalajiStoreTests</key>
 		<data>
-		BnAWnaxi5JQwbdtkLgOTDPs6pr0=
+		/4Yb2KuxKS2Jc790cAG9Cgo3Ebw=
 		</data>
 		<key>PlugIns/BalajiStoreTests.xctest/Info.plist</key>
 		<data>
@@ -88,11 +88,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2m1ffy5DFRNQgKREHi/WRHGp9S0=
+			EbQOKW1/dO3vs0X6Q6Jjnl0CDeE=
 			</data>
 			<key>hash2</key>
 			<data>
-			rS0q5LjUQIkvyHnz0xM2dsQpx4hEmjyPfYooA8psnIU=
+			Iexqa2BChEjwPKcKCWWaocoPtLO3t3PfumsTwgHtdAs=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -222,22 +222,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6l6C+6Ql6soRxNyfMSYFg8kVFPQ=
+			nZAYi2I2bjKokbA1yKv7z+oGK40=
 			</data>
 			<key>hash2</key>
 			<data>
-			JEDJLz7fKauGW1nXeX/Wx5QgDS/ObUzg/xpseiX0IW8=
+			cgOdn6Jx5qhyA8mqzS1Uv/bL+Zakb1MwslxQOCQlUes=
 			</data>
 		</dict>
 		<key>PlugIns/BalajiStoreTests.xctest/BalajiStoreTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BnAWnaxi5JQwbdtkLgOTDPs6pr0=
+			/4Yb2KuxKS2Jc790cAG9Cgo3Ebw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XIXcdjKSZRKU4Er0huFT/Hi43cT0Fumyh3Zm0mCeyVs=
+			2blQ4szl4QYTLeMib4+lJ6vjZBYqEVNNBuqoheXDxjQ=
 			</data>
 		</dict>
 		<key>PlugIns/BalajiStoreTests.xctest/Info.plist</key>
