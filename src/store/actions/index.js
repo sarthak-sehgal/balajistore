@@ -12,3 +12,7 @@ export {
     getProducts,
     searchProducts
 } from './products';
+
+export {
+    addProduct
+} from './cart';

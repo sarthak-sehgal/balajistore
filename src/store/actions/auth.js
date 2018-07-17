@@ -61,7 +61,6 @@ export const authSetToken = token => {
 };
 
 export const authGetToken = () => {
-    console.log(API_KEY);
     return (dispatch, getState) => {
         const promise = new Promise((resolve, reject) => {
             const token = getState().auth.token;
@@ -116,8 +115,8 @@ export const authGetToken = () => {
                             parsedRes.id_token,
                             parsedRes.expires_in,
                             parsedRes.refresh_token,
-                            parseRes.user_id
-                        ));
+                            parsedRes.user_id
+                        ));                       
                         return parsedRes.id_token;
                     } else {
                         dispatch(authClearStorage());

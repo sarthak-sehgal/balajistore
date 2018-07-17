@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, ActivityIndicator, FlatList, TextInput } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator, FlatList, TextInput, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import { getProducts, searchProducts } from '../../store/actions/index';
 
@@ -33,6 +33,16 @@ class AllProducts extends Component {
         this.props.searchProducts(query);
     }
 
+    onItemPress = (itemKey) => {
+        console.log(itemKey);
+        this.props.navigator.push({
+            screen: 'app.Product',
+            passProps: {
+                itemKey: itemKey,
+                products: this.props.products
+            }
+        })
+    }
 
     render() {
         let list = <Text>No results found!</Text>;
@@ -43,11 +53,13 @@ class AllProducts extends Component {
                     data={this.props.products}
                     keyExtractor={(item, index) => index.toString()}
                     renderItem={({ item }) =>
-                        <View style={styles.product}>
-                            <Text style={styles.productName}>{item.name}</Text>
-                            <Text style={styles.productPrice}>Price: {item.price}</Text>
-                            <Text style={styles.productDescription}>{item.description}</Text>
-                        </View>
+                        <TouchableOpacity onPress={() => this.onItemPress(item.key)}>
+                            <View style={styles.product}>
+                                <Text style={styles.productName}>{item.name}</Text>
+                                <Text style={styles.productPrice}>Price: {item.price}</Text>
+                                <Text style={styles.productDescription}>{item.description}</Text>
+                            </View>
+                        </TouchableOpacity>
                     }
                 />
             );
@@ -121,7 +133,8 @@ const styles = StyleSheet.create({
     },
     productName: {
         fontSize: 20,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: '#000'
     },
     productDescription: {
         fontSize: 15,
