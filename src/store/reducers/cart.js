@@ -30,7 +30,8 @@ const reducer = (state = initialState, action) => {
                 productKey: action.details.productKey,
                 productName: action.details.productName,
                 productDescription: action.details.productDescription,
-                productPrice: action.details.productPrice
+                productPrice: action.details.productPrice,
+                productQty: 1
             };
             cart.push(productDetails);
             return {
@@ -47,6 +48,17 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 cart: { ...action.cart }
+            }
+        case actionTypes.UPDATE_QTY_IN_STORE:
+            let cart = {...state.cart};
+            Object.keys(cart.products).map(key => {
+                if(key === action.id) {
+                    cart.products[key].productQty = action.qty;
+                }
+            });
+            return {
+                ...state,
+                cart: cart
             }
     }
     return state;

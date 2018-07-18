@@ -23,14 +23,14 @@ export const addProduct = (cartDetails) => {
                                         }
                                     }
                                 };
-                                console.log("works");
                                 if (!exists) {
                                     let newProduct = {};
                                     newProduct[cartDetails.key] = {
                                         productDescription: cartDetails.description,
                                         productKey: cartDetails.key,
                                         productName: cartDetails.name,
-                                        productPrice: cartDetails.price
+                                        productPrice: cartDetails.price,
+                                        productQty: 1
                                     }
                                     fetch(BASE_URL + "/cart/" + cart[0].key + "/products.json?auth=" + token, {
                                         method: "PATCH",
@@ -72,7 +72,8 @@ export const addProduct = (cartDetails) => {
                                     productDescription: cartDetails.description,
                                     productKey: cartDetails.key,
                                     productName: cartDetails.name,
-                                    productPrice: cartDetails.price
+                                    productPrice: cartDetails.price,
+                                    productQty: 1
                                 }
                                 fetch(BASE_URL + "/cart.json?auth=" + token, {
                                     method: "POST",
@@ -221,8 +222,8 @@ export const removeProduct = (productId, uid) => {
                             });
                             let newProducts = {};
                             Object.keys(cart[0].products).map(key => {
-                                if(key !== productId)
-                                    newProducts[key] = {...cart[0].products[key]};
+                                if (key !== productId)
+                                    newProducts[key] = { ...cart[0].products[key] };
                             });
                             fetch(BASE_URL + "/cart/" + cart[0].key + ".json?auth=" + token, {
                                 method: "PATCH",
@@ -273,5 +274,44 @@ export const removeCartProductInStore = (productId) => {
     return {
         type: actionTypes.REMOVE_CART_PRODUCT_IN_STORE,
         id: productId
+    }
+};
+
+export const updateQtyInStore = (productId, qty) => {
+    return {
+        type: actionTypes.UPDATE_QTY_IN_STORE,
+        id: productId,
+        qty: qty
+    }
+};
+
+export const updateQty = (productId, qty) => {
+    return (dispatch, getState) => {
+        dispatch(updateQtyInStore(productId, qty));
+        dispatch(authGetToken())
+            .then(token => {
+                fetch(BASE_URL + "/cart/" + getState().cart.cart.key + "/products/" + productId + ".json?auth=" + token, {
+                    method: "PATCH",
+                    body: JSON.stringify({
+                        productQty: qty
+                    }),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .catch(error => {
+                        console.log(err);
+                        alert("Failed to update quantity in database! Please try later.");
+                    })
+                    .then(res => res.json())
+                    .then(parsedRes => {
+                        if (parsedRes.error) {
+                            alert("Failed to update quantity in database! Please try later.");
+                        }
+                    });
+            })
+            .catch(err => {
+                alert("Failed to update quantity in database!");
+            });
     }
 };

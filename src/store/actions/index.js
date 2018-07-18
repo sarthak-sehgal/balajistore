@@ -20,5 +20,6 @@ export {
 export {
     addProduct,
     getCart,
-    removeProduct
+    removeProduct,
+    updateQty
 } from './cart';

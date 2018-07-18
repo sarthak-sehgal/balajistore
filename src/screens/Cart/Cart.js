@@ -12,7 +12,7 @@ class Cart extends Component {
         totalPrice: 0
     }
     componentWillReceiveProps(nextProps) {
-        if (JSON.stringify(this.props.cart) !== JSON.stringify(nextProps.cart)) {
+        if ((JSON.stringify(this.props.cart) !== JSON.stringify(nextProps.cart))) {
             if (nextProps.cart) {
                 this.setState({ cart: nextProps.cart, isEmpty: false });
                 if (nextProps.cart.products) {
@@ -21,12 +21,6 @@ class Cart extends Component {
                     if (count === 0) {
                         this.setState({ isEmpty: true, totalPrice: 0 });
                         console.log("Cart empty!");
-                    } else {
-                        let price = 0;
-                        Object.keys(nextProps.cart.products).map(key => {
-                            price += parseInt(nextProps.cart.products[key].productPrice);
-                        });
-                        this.setState({ totalPrice: price });
                     }
                 } else {
                     this.setState({ isEmpty: true });
@@ -34,6 +28,13 @@ class Cart extends Component {
             } else {
                 this.setState({ cart: {}, isEmpty: true });
             }
+        }
+        if (nextProps.cart.products) {
+            let price = 0;
+            Object.keys(nextProps.cart.products).map(key => {
+                price += parseInt(nextProps.cart.products[key].productPrice * nextProps.cart.products[key].productQty);
+            });
+            this.setState({ totalPrice: price });
         }
     }
     componentDidMount() {
@@ -73,7 +74,7 @@ class Cart extends Component {
             .catch(err => alert("Error occurred while loading cart!"));
     }
 
-    removeProductFromCart(key, uid) {
+    removeProductFromCart(key) {
         this.props.removeProduct(key, this.props.uid)
             .catch(err => console.log(err))
             .then(result => console.log(result));
@@ -93,11 +94,12 @@ class Cart extends Component {
                         <Text style={styles.productPrice}>Price: {item.productPrice}</Text>
                         <Text style={styles.productDescription}>{item.productDescription}</Text>
                         <View style={styles.productFooter}>
-                            <QtyCounter />
-                            <Button
-                                onPress={() => this.removeProductFromCart(key, this.props.uid)}
-                                title="Remove"
-                            />
+                            <QtyCounter itemKey={key} qty={item.productQty} />
+                            <TouchableOpacity onPress={() => this.removeProductFromCart(key)}>
+                                <View style={styles.removeBtn}>
+                                    <Text style={styles.removeBtnText}>Remove</Text>
+                                </View>
+                            </TouchableOpacity>
                         </View>
                     </View>
                 )
@@ -205,6 +207,16 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between'
+    },
+    removeBtn: {
+        backgroundColor: '#ff3c3c',
+        padding: 10,
+        borderRadius: 4
+    },
+    removeBtnText: {
+        color: '#fff',
+        fontSize: 15,
+        fontWeight: 'bold'
     }
 });
 
