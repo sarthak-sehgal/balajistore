@@ -80,6 +80,21 @@ class Cart extends Component {
             .then(result => console.log(result));
     }
 
+    onCheckout = () => {
+        if (!this.props.loggedIn) {
+            this.props.navigator.showLightBox({
+                screen: "app.Authenticate",
+                passProps: {},
+                style: {
+                    backgroundBlur: "dark",
+                    backgroundColor: "rgba(255,255,255,0.9)",
+                    tapBackgroundToDismiss: true
+                },
+                adjustSoftInput: "resize",
+            });
+        }
+    }
+
     render() {
         let cart = <ActivityIndicator />;
         if (this.state.isEmpty) {
@@ -110,7 +125,7 @@ class Cart extends Component {
             <View style={styles.container}>
                 <View style={styles.cartHeader}>
                     <Text style={styles.cartSubtotal}>Cart Subtotal ({this.state.itemsCount} {this.state.itemsCount > 0 ? "items" : "item"}): <Text style={styles.cartPrice}>Rs. {this.state.totalPrice}</Text></Text>
-                    <TouchableOpacity disabled={this.state.itemsCount === 0}>
+                    <TouchableOpacity onPress={this.onCheckout} disabled={this.state.itemsCount === 0}>
                         <View style={styles.checkoutButton}>
                             <Text style={styles.checkoutButtonText}>PROCEED TO CHECKOUT</Text>
                         </View>
@@ -224,7 +239,8 @@ mapStateToProps = state => {
     return {
         uid: state.auth.uid,
         cart: state.cart.cart,
-        isLoading: state.ui.cartLoading
+        isLoading: state.ui.cartLoading,
+        loggedIn: state.auth.loggedIn
     }
 }
 

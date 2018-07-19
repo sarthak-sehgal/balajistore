@@ -6,6 +6,8 @@ import Cart from './Cart/Cart';
 import SideDrawer from './SideDrawer/SideDrawer';
 import AnonLogin from './AnonLogin/AnonLogin';
 import Product from './Product/Product';
+import Authenticate from './Authenticate/Authenticate';
+import SignUp from './SignUp/SignUp';
 
 // connect screens with redux
 import {Provider} from 'react-redux';
@@ -20,4 +22,6 @@ export function registerScreens() {
   Navigation.registerComponent('app.SideDrawer', () => SideDrawer, store, Provider);
   Navigation.registerComponent('app.AnonLogin', () => AnonLogin, store, Provider);
   Navigation.registerComponent('app.Product', () => Product, store, Provider);
+  Navigation.registerComponent('app.Authenticate', () => Authenticate, store, Provider);
+  Navigation.registerComponent('app.SignUp', () => SignUp, store, Provider);
 }
