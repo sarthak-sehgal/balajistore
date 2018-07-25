@@ -3,6 +3,8 @@ import { View, Text, ActivityIndicator, ScrollView, TouchableOpacity, Button, St
 import { connect } from 'react-redux';
 import { getCart, removeProduct } from '../../store/actions/index';
 import QtyCounter from '../../components/qtyCounter/qtyCounter';
+import Icon from 'react-native-vector-icons/Ionicons';
+import { Navigation } from 'react-native-navigation';
 
 class Cart extends Component {
     state = {
@@ -82,16 +84,22 @@ class Cart extends Component {
 
     onCheckout = () => {
         if (!this.props.loggedIn) {
-            this.props.navigator.showModal({
-                screen: "app.Authenticate",
-                title: "Authentication",
-                passProps: {},
-                // style: {
-                //     backgroundBlur: "dark",
-                //     backgroundColor: "rgba(255,255,255,0.9)",
-                //     tapBackgroundToDismiss: true
-                // },
-                // adjustSoftInput: "resize",
+            Promise.all([
+                Icon.getImageSource("ios-close", 40),
+            ]).then(sources => {
+                Navigation.showModal({
+                    screen: 'app.Authenticate', // unique ID registered with Navigation.registerScreen
+                    title: 'Authentication', // navigation bar title of the pushed screen (optional)
+                    navigatorButtons: {
+                        leftButtons: [
+                            {
+                                icon: sources[0],
+                                title: "Close",
+                                id: "closeModal"
+                            }
+                        ]
+                    }
+                });
             });
         }
     }

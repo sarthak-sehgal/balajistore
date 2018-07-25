@@ -11,6 +11,17 @@ class Authenticate extends Component {
       user: null,
       error: null,
     };
+    this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
+  }
+
+  onNavigatorEvent = event => {
+    if (event.type === "NavBarButtonPress") {
+      if (event.id === "closeModal") {
+        this.props.navigator.dismissModal({
+          animationType: 'slide-down' // 'none' / 'slide-down' , dismiss animation for the modal (optional, default 'slide-down')
+        });
+      }
+    }
   }
 
   async componentDidMount() {

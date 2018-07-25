@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/sarthak/Personal/BalajiStore/node_modules/react-native-google-signin/ios/RNGoogleSignin/RNGoogleSignin.m \
+  RNGoogleSignin/RNGoogleSignIn.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  ../../../ios/Pods/Headers/Public/GoogleSignIn/GoogleSignIn/GoogleSignIn.h \
+  ../../../ios/Pods/Headers/Public/GoogleSignIn/GoogleSignIn/GIDAuthentication.h \
+  ../../../ios/Pods/Headers/Public/GoogleSignIn/GoogleSignIn/GIDGoogleUser.h \
+  ../../../ios/Pods/Headers/Public/GoogleSignIn/GoogleSignIn/GIDProfileData.h \
+  ../../../ios/Pods/Headers/Public/GoogleSignIn/GoogleSignIn/GIDSignIn.h \
+  ../../../ios/Pods/Headers/Public/GoogleSignIn/GoogleSignIn/GIDSignInButton.h \
+  ../../react-native/React/Base/RCTEventDispatcher.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/sarthak/Personal/BalajiStore/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h
