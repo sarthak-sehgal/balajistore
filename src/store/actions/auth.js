@@ -65,11 +65,14 @@ export const authGetToken = () => {
         const promise = new Promise((resolve, reject) => {
             const token = getState().auth.token;
             if (!token) {
+                console.log("Token not found in state");
                 let fetchedToken;
                 AsyncStorage.getItem("auth-token")
                     .catch(err => reject())
                     .then(tokenFromStorage => {
                         if (!tokenFromStorage) {
+                            console.log("Token not found in storage");
+                            dispatch(anonLogin());
                             reject();
                             return;
                         }
@@ -135,9 +138,13 @@ export const authGetToken = () => {
 };
 
 export const autoAnonSignIn = () => {
+    console.log("Auto anon sign in");
     return dispatch => {
         dispatch(authGetToken())
-            .then(token => startMain())
+            .then(token => {
+                console.log("Login successful!");
+                startMain();
+            })
             .catch(err => {
                 console.log("Failed to fetch token!")
             }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">910187357930-11lco315sh1bn13qn8fgiraeh5feif8q.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://native-shopping-app.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">910187357930</string>
+    <string name="google_api_key" translatable="false">AIzaSyB3UCkEyvfVKshhaGKoYmmk0ZHLAJLOEYY</string>
+    <string name="google_app_id" translatable="false">1:910187357930:android:ac3385a192611af2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB3UCkEyvfVKshhaGKoYmmk0ZHLAJLOEYY</string>
+    <string name="google_storage_bucket" translatable="false">native-shopping-app.appspot.com</string>
+    <string name="project_id" translatable="false">native-shopping-app</string>
+</resources>

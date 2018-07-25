@@ -103,7 +103,7 @@ export const addProduct = (cartDetails) => {
                                         } else {
                                             dispatch(addCartProductInStore(cartDetails));
                                             dispatch(cartStopLoading());
-                                            dispatch(getCart())
+                                            dispatch(getCart(getState().auth.uid))
                                                 .then(result => console.log(result))
                                                 .catch(err => alert("Failed to update user cart!"));
                                             resolve("added");

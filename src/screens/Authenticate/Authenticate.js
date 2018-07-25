@@ -1,14 +1,138 @@
-import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, TouchableOpacity, Platform } from 'react-native';
+
+import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
+import config from '../../config';
 
 class Authenticate extends Component {
-    render () {
-        return (
-            <View>
-                <Text>Authenticate screen!</Text>
-            </View>
-        )
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: null,
+      error: null,
+    };
+  }
+
+  async componentDidMount() {
+    await this._configureGoogleSignIn();
+    await this._getCurrentUser();
+  }
+
+  async _configureGoogleSignIn() {
+    await GoogleSignin.hasPlayServices({ autoResolve: true });
+    const configPlatform = {
+      ...Platform.select({
+        ios: {
+          iosClientId: config.iosClientId,
+        },
+        android: {
+          androidClientId: config.androidClientId,
+        },
+      }),
+    };
+
+    await GoogleSignin.configure({
+      ...configPlatform,
+      webClientId: config.webClientId,
+      offlineAccess: false,
+    });
+  }
+
+  async _getCurrentUser() {
+    try {
+      const user = await GoogleSignin.currentUserAsync();
+      this.setState({ user, error: null });
+    } catch (error) {
+      this.setState({
+        error,
+      });
+      console.log(error);
     }
-};
+  }
+
+  render() {
+    const { user, error } = this.state;
+    if (!user) {
+      return (
+        <View style={styles.container}>
+          <GoogleSigninButton
+            style={{ width: 212, height: 48 }}
+            size={GoogleSigninButton.Size.Standard}
+            color={GoogleSigninButton.Color.Auto}
+            onPress={this._signIn}
+          />
+          {error && (
+            <Text>
+              {error.toString()} code: {error.code}
+            </Text>
+          )}
+        </View>
+      );
+    } else {
+      return (
+        <View style={styles.container}>
+          <Text style={{ fontSize: 18, fontWeight: 'bold', marginBottom: 20 }}>
+            Welcome {user.name}
+          </Text>
+          <Text>Your email is: {user.email}</Text>
+
+          <TouchableOpacity onPress={this._signOut}>
+            <View style={{ marginTop: 50 }}>
+              <Text>Log out</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      );
+    }
+  }
+
+  _signIn = async () => {
+    try {
+      const user = await GoogleSignin.signIn();
+      this.setState({ user, error: null });
+      console.log(user);
+      console.log(user);
+    } catch (error) {
+      if (error.code === 'CANCELED') {
+        error.message = 'user canceled the login flow';
+      }
+      console.log(error);
+      this.setState({
+        error,
+      });
+    }
+  };
+
+  _signOut = async () => {
+    try {
+      await GoogleSignin.revokeAccess();
+      await GoogleSignin.signOut();
+      this.setState({ user: null });
+    } catch (error) {
+      this.setState({
+        error,
+      });
+    }
+  };
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
+  },
+});
 
 export default Authenticate;

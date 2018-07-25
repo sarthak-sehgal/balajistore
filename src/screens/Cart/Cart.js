@@ -82,15 +82,16 @@ class Cart extends Component {
 
     onCheckout = () => {
         if (!this.props.loggedIn) {
-            this.props.navigator.showLightBox({
+            this.props.navigator.showModal({
                 screen: "app.Authenticate",
+                title: "Authentication",
                 passProps: {},
-                style: {
-                    backgroundBlur: "dark",
-                    backgroundColor: "rgba(255,255,255,0.9)",
-                    tapBackgroundToDismiss: true
-                },
-                adjustSoftInput: "resize",
+                // style: {
+                //     backgroundBlur: "dark",
+                //     backgroundColor: "rgba(255,255,255,0.9)",
+                //     tapBackgroundToDismiss: true
+                // },
+                // adjustSoftInput: "resize",
             });
         }
     }

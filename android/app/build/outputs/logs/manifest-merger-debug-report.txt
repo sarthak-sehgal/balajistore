@@ -1,25 +1,69 @@
 -- Merging decision tree log ---
 manifest
 ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
+MERGED from [:react-native-google-signin] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
+MERGED from [:react-native-vector-icons] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d198d9d09095af097e7bc1e451c09d41/AndroidManifest.xml:2:1-15:12
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/1cfe2333e91548438d21f30acdcb0c05/AndroidManifest.xml:2:1-14:12
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/121145fad3bba018d29723bcf71cc14a/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/adad98f5c643961fb891edafa7764ecb/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/0affe8b2cd3a539f5f3a94369c3326a3/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/532592b6063de25dbf5e7b73b1f3dd5f/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/dd6f62b49408be2344a037c02b7815ab/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/003a3925b8130c2a415f4a776190cb41/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/889866244cec8fa614871302e84d481a/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/df38a0fecbb50a1ce329eafa841a5c97/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/a83c7fdb47734669432ea0c49b6f1a6c/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/489b76f0de383c230e586eb44db8dc7b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/e9c053c0cb36cce709b3b6245315b373/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/97d6c78b07567517d2671954147a44fd/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/a383c93fee25f04b493551a75591121c/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/e7961ed571f0bcfffd6fe689ca3c04c8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/31e03b9a4b13ca01843ef22f6e982cce/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a4bb54ce0c44ef86f9a72880cdd4523d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/8c8494cbd61adf4d65e884ef9132c963/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1773e38e5ba238b1f19628c2f5254843/AndroidManifest.xml:17:1-26:12
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/b3d0536af94bd407a414bf123f642b2d/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/62838b6989ef97c1939632c07479b4f6/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/1f55655694387095b01250792c8b70d9/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6ce7e9a749d010491a893ff6da1da5cb/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d5fa749d8d5751d3c7bdce6076aff6a0/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/038b40b554d0a2a44533bc0b1d3a71ea/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/29475addc41c98f0d8334c91e3776ae5/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/62049c4dd5a4a879621852262b647fbb/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5182e7c26fb7d71e74217c6e674e5610/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
 	package
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:2:5-30
 		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
+		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12
 		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:11-69
-	android:versionCode
-		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:4:5-67
 	android:name
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:4:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
 ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d198d9d09095af097e7bc1e451c09d41/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d198d9d09095af097e7bc1e451c09d41/AndroidManifest.xml:11:5-78
 	android:name
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:5:22-75
 uses-permission#android.permission.ACCESS_NETWORK_STATE
@@ -28,30 +72,58 @@ ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManif
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:6:22-76
 application
 ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:8:5-25:19
-MERGED from [BalajiStore:react-native-navigation:unspecified] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/BalajiStore/react-native-navigation/unspecified/AndroidManifest.xml:11:5-18:19
-MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/AndroidManifest.xml:11:5-20
-MERGED from [com.android.support:design:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/AndroidManifest.xml:26:5-20
-MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/AndroidManifest.xml:12:5-20
-MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/AndroidManifest.xml:12:5-20
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/AndroidManifest.xml:13:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-compat:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/AndroidManifest.xml:29:5-20
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/AndroidManifest.xml:2:3-17
+MERGED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d198d9d09095af097e7bc1e451c09d41/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d198d9d09095af097e7bc1e451c09d41/AndroidManifest.xml:13:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/1cfe2333e91548438d21f30acdcb0c05/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/1cfe2333e91548438d21f30acdcb0c05/AndroidManifest.xml:12:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/121145fad3bba018d29723bcf71cc14a/AndroidManifest.xml:11:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/121145fad3bba018d29723bcf71cc14a/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/adad98f5c643961fb891edafa7764ecb/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/adad98f5c643961fb891edafa7764ecb/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/dd6f62b49408be2344a037c02b7815ab/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/dd6f62b49408be2344a037c02b7815ab/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/003a3925b8130c2a415f4a776190cb41/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/003a3925b8130c2a415f4a776190cb41/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/889866244cec8fa614871302e84d481a/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/889866244cec8fa614871302e84d481a/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/df38a0fecbb50a1ce329eafa841a5c97/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/df38a0fecbb50a1ce329eafa841a5c97/AndroidManifest.xml:25:5-29:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/97d6c78b07567517d2671954147a44fd/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/97d6c78b07567517d2671954147a44fd/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/a383c93fee25f04b493551a75591121c/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/a383c93fee25f04b493551a75591121c/AndroidManifest.xml:2:3-17
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/b3d0536af94bd407a414bf123f642b2d/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/b3d0536af94bd407a414bf123f642b2d/AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/62838b6989ef97c1939632c07479b4f6/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/62838b6989ef97c1939632c07479b4f6/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/1f55655694387095b01250792c8b70d9/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/1f55655694387095b01250792c8b70d9/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6ce7e9a749d010491a893ff6da1da5cb/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6ce7e9a749d010491a893ff6da1da5cb/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d5fa749d8d5751d3c7bdce6076aff6a0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d5fa749d8d5751d3c7bdce6076aff6a0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/038b40b554d0a2a44533bc0b1d3a71ea/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/038b40b554d0a2a44533bc0b1d3a71ea/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/29475addc41c98f0d8334c91e3776ae5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/29475addc41c98f0d8334c91e3776ae5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/62049c4dd5a4a879621852262b647fbb/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/62049c4dd5a4a879621852262b647fbb/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5182e7c26fb7d71e74217c6e674e5610/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5182e7c26fb7d71e74217c6e674e5610/AndroidManifest.xml:24:5-28:19
 	android:label
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:10:7-39
-	android:allowBackup
-		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:12:7-34
 	android:icon
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:11:7-41
+	android:allowBackup
+		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:12:7-34
 	android:theme
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:13:7-38
 	android:name
@@ -66,7 +138,7 @@ ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManif
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:17:9-79
 	android:name
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:15:9-37
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:19:9-22:25
 action#android.intent.action.MAIN
 ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:20:13-65
@@ -78,73 +150,169 @@ ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManif
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:21:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
 ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:24:7-84
-MERGED from [BalajiStore:react-native-navigation:unspecified] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/BalajiStore/react-native-navigation/unspecified/AndroidManifest.xml:15:9-17:40
+MERGED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+MERGED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
 	android:exported
-		ADDED from [BalajiStore:react-native-navigation:unspecified] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/BalajiStore/react-native-navigation/unspecified/AndroidManifest.xml:17:13-37
+		ADDED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-37
 	android:name
 		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:24:17-81
 uses-sdk
 INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [BalajiStore:react-native-navigation:unspecified] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/BalajiStore/react-native-navigation/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.aurelhubert/ahbottomnavigation/2.0.6/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:design:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/AndroidManifest.xml:20:5-44
-MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu-toolbar/1.5.4/AndroidManifest.xml:8:5-10:41
-MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.balysv.materialmenu/material-menu/1.5.4/AndroidManifest.xml:8:5-10:41
-MERGED from [BalajiStore:react-native-vector-icons:unspecified] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/BalajiStore/react-native-vector-icons/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.4/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-compat:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/AndroidManifest.xml:2:3-70
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-google-signin] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-google-signin] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-google-signin/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d198d9d09095af097e7bc1e451c09d41/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d198d9d09095af097e7bc1e451c09d41/AndroidManifest.xml:7:5-9:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/1cfe2333e91548438d21f30acdcb0c05/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/1cfe2333e91548438d21f30acdcb0c05/AndroidManifest.xml:8:5-10:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/121145fad3bba018d29723bcf71cc14a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/121145fad3bba018d29723bcf71cc14a/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/adad98f5c643961fb891edafa7764ecb/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/adad98f5c643961fb891edafa7764ecb/AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/0affe8b2cd3a539f5f3a94369c3326a3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/0affe8b2cd3a539f5f3a94369c3326a3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/532592b6063de25dbf5e7b73b1f3dd5f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/532592b6063de25dbf5e7b73b1f3dd5f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/dd6f62b49408be2344a037c02b7815ab/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/dd6f62b49408be2344a037c02b7815ab/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/003a3925b8130c2a415f4a776190cb41/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/003a3925b8130c2a415f4a776190cb41/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/889866244cec8fa614871302e84d481a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/889866244cec8fa614871302e84d481a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/df38a0fecbb50a1ce329eafa841a5c97/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/df38a0fecbb50a1ce329eafa841a5c97/AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/a83c7fdb47734669432ea0c49b6f1a6c/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/a83c7fdb47734669432ea0c49b6f1a6c/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/489b76f0de383c230e586eb44db8dc7b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/489b76f0de383c230e586eb44db8dc7b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/e9c053c0cb36cce709b3b6245315b373/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/e9c053c0cb36cce709b3b6245315b373/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/97d6c78b07567517d2671954147a44fd/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/97d6c78b07567517d2671954147a44fd/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/e7961ed571f0bcfffd6fe689ca3c04c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/e7961ed571f0bcfffd6fe689ca3c04c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/31e03b9a4b13ca01843ef22f6e982cce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/31e03b9a4b13ca01843ef22f6e982cce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a4bb54ce0c44ef86f9a72880cdd4523d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/a4bb54ce0c44ef86f9a72880cdd4523d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/8c8494cbd61adf4d65e884ef9132c963/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/8c8494cbd61adf4d65e884ef9132c963/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1773e38e5ba238b1f19628c2f5254843/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1773e38e5ba238b1f19628c2f5254843/AndroidManifest.xml:20:5-43
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/b3d0536af94bd407a414bf123f642b2d/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/b3d0536af94bd407a414bf123f642b2d/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/62838b6989ef97c1939632c07479b4f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/62838b6989ef97c1939632c07479b4f6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/1f55655694387095b01250792c8b70d9/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/1f55655694387095b01250792c8b70d9/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6ce7e9a749d010491a893ff6da1da5cb/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6ce7e9a749d010491a893ff6da1da5cb/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d5fa749d8d5751d3c7bdce6076aff6a0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d5fa749d8d5751d3c7bdce6076aff6a0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/038b40b554d0a2a44533bc0b1d3a71ea/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/038b40b554d0a2a44533bc0b1d3a71ea/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/29475addc41c98f0d8334c91e3776ae5/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/29475addc41c98f0d8334c91e3776ae5/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/62049c4dd5a4a879621852262b647fbb/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/62049c4dd5a4a879621852262b647fbb/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5182e7c26fb7d71e74217c6e674e5610/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5182e7c26fb7d71e74217c6e674e5610/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml
 activity#com.reactnativenavigation.controllers.NavigationActivity
-ADDED from [BalajiStore:react-native-navigation:unspecified] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/BalajiStore/react-native-navigation/unspecified/AndroidManifest.xml:12:9-14:86
+ADDED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-14:86
 	android:configChanges
-		ADDED from [BalajiStore:react-native-navigation:unspecified] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/BalajiStore/react-native-navigation/unspecified/AndroidManifest.xml:14:13-83
+		ADDED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-83
 	android:name
-		ADDED from [BalajiStore:react-native-navigation:unspecified] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/BalajiStore/react-native-navigation/unspecified/AndroidManifest.xml:13:13-84
+		ADDED from [:react-native-navigation] /Users/sarthak/Personal/BalajiStore/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-84
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-v4:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-compat:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/adad98f5c643961fb891edafa7764ecb/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/adad98f5c643961fb891edafa7764ecb/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/889866244cec8fa614871302e84d481a/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/889866244cec8fa614871302e84d481a/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1773e38e5ba238b1f19628c2f5254843/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/1773e38e5ba238b1f19628c2f5254843/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/62838b6989ef97c1939632c07479b4f6/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/62838b6989ef97c1939632c07479b4f6/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/1f55655694387095b01250792c8b70d9/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/1f55655694387095b01250792c8b70d9/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6ce7e9a749d010491a893ff6da1da5cb/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6ce7e9a749d010491a893ff6da1da5cb/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d5fa749d8d5751d3c7bdce6076aff6a0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d5fa749d8d5751d3c7bdce6076aff6a0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/038b40b554d0a2a44533bc0b1d3a71ea/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/038b40b554d0a2a44533bc0b1d3a71ea/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/29475addc41c98f0d8334c91e3776ae5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/29475addc41c98f0d8334c91e3776ae5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/62049c4dd5a4a879621852262b647fbb/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/62049c4dd5a4a879621852262b647fbb/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:design:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:27:9-31
+		ADDED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:27:9-31
 	android:name
-		ADDED from [com.android.support:design:25.3.1] /Users/sarthak/Personal/BalajiStore/android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/AndroidManifest.xml:26:9-47
-android:uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+		ADDED from [com.android.support:design:25.3.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/edad59a89f4a6d47e47fd8eaf3c8bdd4/AndroidManifest.xml:26:9-47
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/72df6c1bb01b36760591305afef7adfd/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/6822de68e63f2adabf7458e75deb2e04/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/003a3925b8130c2a415f4a776190cb41/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/003a3925b8130c2a415f4a776190cb41/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/003a3925b8130c2a415f4a776190cb41/AndroidManifest.xml:24:13-58
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 IMPLIED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_PHONE_STATE
+uses-permission#android.permission.READ_PHONE_STATE
 IMPLIED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
 IMPLIED from /Users/sarthak/Personal/BalajiStore/android/app/src/main/AndroidManifest.xml:1:1-27:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5182e7c26fb7d71e74217c6e674e5610/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5182e7c26fb7d71e74217c6e674e5610/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/sarthak/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5182e7c26fb7d71e74217c6e674e5610/AndroidManifest.xml:26:13-58

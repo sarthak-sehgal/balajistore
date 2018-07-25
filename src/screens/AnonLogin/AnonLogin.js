@@ -5,9 +5,11 @@ import { autoAnonSignIn } from '../../store/actions/index';
 
 class AnonLogin extends Component {
     componentDidMount() {
+        console.log("Welcome to app!");
         NetInfo.getConnectionInfo().then((connectionInfo) => {
             if(connectionInfo.type === "none") {
                 alert("Please connect to internet");
+                console.log("No internet detected!");
             } else {
                 this.props.onAutoSignIn();
             }

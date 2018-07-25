@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "910187357930",
+    "firebase_url": "https://native-shopping-app.firebaseio.com",
+    "project_id": "native-shopping-app",
+    "storage_bucket": "native-shopping-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910187357930:android:ac3385a192611af2",
+        "android_client_info": {
+          "package_name": "com.balajistore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910187357930-11lco315sh1bn13qn8fgiraeh5feif8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3UCkEyvfVKshhaGKoYmmk0ZHLAJLOEYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910187357930:android:0c8bb8eab4aed6a3",
+        "android_client_info": {
+          "package_name": "shopping.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910187357930-11lco315sh1bn13qn8fgiraeh5feif8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3UCkEyvfVKshhaGKoYmmk0ZHLAJLOEYY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
