@@ -23,3 +23,7 @@ export {
     removeProduct,
     updateQty
 } from './cart';
+
+export {
+    googleSetUser
+} from './google-auth';

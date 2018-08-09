@@ -5,6 +5,7 @@ import uiReducer from './reducers/ui';
 import authReducer from './reducers/auth';
 import productsReducer from './reducers/products';
 import cartReducer from './reducers/cart';
+import googleAuthReducer from './reducers/google-auth';
 
 export default configureStore = () => {
     let composeEnhancers = compose;
@@ -17,7 +18,8 @@ export default configureStore = () => {
         ui: uiReducer,
         auth: authReducer,
         products: productsReducer,
-        cart: cartReducer
+        cart: cartReducer,
+        googleAuth: googleAuthReducer
     });
 
     return createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));

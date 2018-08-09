@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, NetInfo, Image, StyleSheet, Platform } from 'react-native';
 import { connect } from 'react-redux';
-import { autoAnonSignIn } from '../../store/actions/index';
+import { autoAnonSignIn, googleSetUser } from '../../store/actions/index';
 import { GoogleSignin } from 'react-native-google-signin';
 import config from '../../config';
 import startMain from '../StartMain/StartMain';
@@ -24,6 +24,7 @@ class AnonLogin extends Component {
                 console.log("No internet detected!");
             } else if (this.state.user !== null) {
                 console.log("User found!", this.state.user);
+                this.props.googleSignIn(this.state.user);
                 startMain();
             } else {
                 console.log("Anonymous sign in!");
@@ -92,7 +93,8 @@ const styles = StyleSheet.create({
 
 const mapDispatchToProps = dispatch => {
     return {
-        onAutoSignIn: () => dispatch(autoAnonSignIn())
+        onAutoSignIn: () => dispatch(autoAnonSignIn()),
+        googleSignIn: (user) => dispatch(googleSetUser(user))
     }
 };
 

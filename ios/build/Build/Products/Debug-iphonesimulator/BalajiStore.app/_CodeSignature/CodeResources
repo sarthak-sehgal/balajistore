@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		EbQOKW1/dO3vs0X6Q6Jjnl0CDeE=
+		RBLKbM7BCjnpzf1Xw48sKw9asjs=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -51,7 +51,7 @@
 		</data>
 		<key>GTMOAuth2ViewTouch.nib</key>
 		<data>
-		uqx+LIIOWXjM0kja/x2SvcEVxDg=
+		P1/Y/VK4zv8D/GkuTUnLCGnx7zE=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
@@ -440,11 +440,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EbQOKW1/dO3vs0X6Q6Jjnl0CDeE=
+			RBLKbM7BCjnpzf1Xw48sKw9asjs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Iexqa2BChEjwPKcKCWWaocoPtLO3t3PfumsTwgHtdAs=
+			6iPpzHIrIwqTrXZIFxSWZ8n7pr4phUMY3+1PA+iwes4=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -552,11 +552,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uqx+LIIOWXjM0kja/x2SvcEVxDg=
+			P1/Y/VK4zv8D/GkuTUnLCGnx7zE=
 			</data>
 			<key>hash2</key>
 			<data>
-			k0mT7iYzVqZcrlb2L+iOLQ2WWoBSTM0i2NSd27VYUh8=
+			bvFWPuCIU9ApbTH4hiR9w8gUEFPofJLH0nSVehwmRok=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>
